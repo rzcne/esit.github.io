@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="贵州大学计算机基础科学学院官方网站">
+    <meta name="keywords" content="贵州大学, 计算机科学, 高等教育, 科研">
+    <title>贵州大学计算机基础科学学院</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: '微软雅黑', sans-serif;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                        url('header-bg.jpg') center/cover;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .nav {
+            background: #003366;
+            padding: 1rem;
+        }
+
+        .nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            transition: all 0.3s;
+        }
+
+        .nav a:hover {
+            background: #005599;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            margin: 3rem 0;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .news-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>贵州大学计算机基础科学学院</h1>
+        <p>创新 · 卓越 · 服务</p>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#about">关于我们</a></li>
+            <li><a href="#news">新闻动态</a></li>
+            <li><a href="#faculty">师资力量</a></li>
+            <li><a href="#contact">联系我们</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="about" class="section">
+            <h2>学院简介</h2>
+            <p>贵州大学计算机基础科学学院是贵州省领先的计算机教育与科研机构，致力于培养具有创新精神和实践能力的计算机科学人才...</p>
+        </section>
+
+        <section id="news" class="section">
+            <h2>最新动态</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <h3>学术研讨会成功举办</h3>
+                    <p>2023年10月 - 我院成功举办人工智能前沿技术国际研讨会...</p>
+                </article>
+                <article class="news-card">
+                    <h3>科研项目获批</h3>
+                    <p>2023年9月 - 我院XXX教授团队获得国家自然科学基金重点项目资助...</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="faculty" class="section">
+            <h2>师资队伍</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="professor1.jpg" alt="教授照片" style="width:100%">
+                    <h3>XXX 教授</h3>
+                    <p>研究方向：人工智能与大数据</p>
+                </div>
+                <!-- 更多教师信息 -->
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>联系我们</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <div>
+                    <p>地址：贵州省贵阳市花溪区贵州大学东校区</p>
+                    <p>电话：0851-8829XXXX</p>
+                    <p>邮箱：cs@mail.gzu.edu.cn</p>
+                </div>
+                <div>
+                    <iframe src="https://map.baidu.com/..." 
+                            style="width:100%; height:200px; border:0;" 
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2023 贵州大学计算机基础科学学院 版权所有</p>
+        <p>黔ICP备XXXXXXX号</p>
+    </footer>
+</body>
+</html>
